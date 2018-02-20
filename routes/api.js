@@ -2,11 +2,15 @@ var express = require('express');
 var router = express.Router();
 
 const mongoose = require('mongoose');
+
 //var mongodbUri = 'mongodb://uji:geoc@ds141950.mlab.com:41950/mytasklist_thewebdeveloper';
 var mongodbUri = 'mongodb://cubdm:iiajwnc@ds141950.mlab.com:41950/mytasklist_thewebdeveloper';
 
 
 /* Line of code below has to be uncommented to allow database connection */
+
+var mongodbUri = 'mongodb://<user>:<passsword>@ds141950.mlab.com:41950/<name of deployment>';
+
 mongoose.connect(mongodbUri);
 
 
